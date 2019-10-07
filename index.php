@@ -8,6 +8,7 @@
             item_image('fullsize', array(), 0, $mainFeaturedItem),
             array('class' => 'image'), 'show', $mainFeaturedItem
         ); ?>
+        <h3 class='featured-title'><?php echo link_to_item(metadata($mainFeaturedItem,array('Dublin Core', 'Title')), array('class' => 'permalink'), 'show', $mainFeaturedItem); ?></h3>
 </div>
 
 <div class="grid-x grid-padding-x top">
@@ -26,6 +27,7 @@
                 item_image('square_thumbnail', array(), 0, $item),
                 array('class' => 'image'), 'show', $item
             ); ?>
+            <h3 class='featured-title'><?php echo link_to_item(metadata($mainFeaturedItem,array('Dublin Core', 'Title')), array('class' => 'permalink'), 'show', $mainFeaturedItem); ?></h3>
         </div>
     <?php endforeach ?>
 </div>

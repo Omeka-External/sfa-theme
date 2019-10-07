@@ -177,6 +177,9 @@ hr {
     display: inline-block;
     padding-right: .5rem; }
 
+.featured-title {
+  text-align: center; }
+
 .pagination a, .pagination button {
   display: inline-block;
   padding: 0.85em 1em; }
