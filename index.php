@@ -1,6 +1,6 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<?php $featuredItems = get_records('Item', array('featured' => 1,'sort_field' => 'added','sort_dir' => 'd')); ?>
+<?php $featuredItems = get_records('Item', array('featured' => 1,'sort_field' => 'added','sort_dir' => 'a')); ?>
 
 <div class="medium-12 cell">
     <?php $mainFeaturedItem = reset($featuredItems); ?>
