@@ -43,9 +43,10 @@
                 <a href="<?php echo url(''); ?>" class="site-title"><img class="inner-logo" src="<?php echo img('logo-sfa.svg', $dir='img'); ?>" alt="Logo for Southern Foodways Alliance"></a>
             </div>
 
-            <div id="search-container" class="medium-5 medium-offset-3 cell top">
+            <div id="search-container" class="medium-5 medium-offset-3 cell top align-right">
             <a href="<?php echo url('/geolocation/map/browse'); ?>"><i class="fi-map"></i></a>
                 <?php echo search_form(); ?>
+                <a href="<?php echo url('items/search'); ?>">Advanced Search</a>
             </div>
                 <div class="medium-3 medium-offset-9 cell">
                 <ul class="dropdown menu" data-dropdown-menu>
@@ -54,10 +55,10 @@
                         <ul class="menu">
                           <li><a href="<?php echo url('collections/show/1'); ?>">Oral History</a></li>
                           <li><a href="<?php echo url('collections/show/2'); ?>">Film</a></li>
-                          <li><a href="<?php echo url('collections/show/3'); ?>">Gravy Podcast</a></li>
-                          <li><a href="<?php echo url('collections/show/4'); ?>">Gravy Journal</a></li>
+                          <li><a href="<?php echo url('collections/show/3'); ?>">Podcast</a></li>
+                          <li><a href="<?php echo url('collections/show/4'); ?>">Journal</a></li>
                           <li><a href="<?php echo url('collections/show/5'); ?>">Photographs</a></li>
-                          <li><a href="<?php echo url('collections/show/6'); ?>">Event Presentations</a></li>
+                          <li><a href="<?php echo url('collections/show/6'); ?>">Presentations</a></li>
                           <li><a href="<?php echo url('collections/show/7'); ?>">SFA Documents</a></li>
                         </ul>
                     </li>

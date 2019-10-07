@@ -31,6 +31,9 @@ h1, h2, h3, h4, h5, h1 a, h2 a, h3 a {
 select {
   width: auto; }
 
+.align-right {
+  text-align: right; }
+
 .top {
   padding-top: 10px; }
 
@@ -46,6 +49,9 @@ select {
   vertical-align: middle;
   color: #a4d65e; }
 
+#search-container {
+  position: relative; }
+
 #search-container form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -53,10 +59,29 @@ select {
   width: 90%; }
 
 #search-container button {
-  margin-top: 15px; }
+  background: #a4d65e;
+  color: white;
+  position: absolute;
+  border: 0;
+  right: 0;
+  height: 39px;
+  width: 39px;
+  text-indent: -9999px; }
 
-#submit_search {
-  display: none; }
+#search-container button:after {
+  font-family: "foundation-icons";
+  content: "\f16c";
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  width: 39px; }
+
+.label {
+  background: #a4d65e; }
 
 a.collection, a.item-file {
   display: block; }
@@ -181,3 +206,11 @@ hr {
   margin-top: 1rem; }
   .element h5 {
     margin-bottom: 0; }
+
+footer {
+  margin-top: 5rem;
+  padding-bottom: 2rem; }
+  footer img {
+    display: block;
+    margin: auto;
+    margin-top: -70px; }

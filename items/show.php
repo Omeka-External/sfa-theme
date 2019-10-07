@@ -14,12 +14,12 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
             <?php echo file_markup($itemFile,array('imageSize' => 'fullsize')); ?>
         <?php endif; ?>
     <?php endforeach; ?>
-    
-    <div class="ohms-object">
-    <?php if(metadata($item, array('Item Type Metadata', 'OHMS Object'))): ?>
-        <?php echo metadata($item, array('Item Type Metadata', 'OHMS Object')); ?>
+     
+    <?php if(metadata('item', array('Item Type Metadata', 'OHMS Object'), array('no_filter'=>true))): ?>
+        <div class="ohms-object">
+            <?php echo metadata('item', array('Item Type Metadata', 'OHMS Object')  ); ?>
+        </div>
     <?php endif; ?>
-    </div>
 
 <?php echo all_element_texts('item'); ?>
 
@@ -51,7 +51,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
     <?php if (metadata('item', 'Collection Name')): ?>
     <h4>Collections</h4>
         <h3><?php echo __('Collection'); ?></h3>
-        <p><?php echo link_to_collection_for_item(); ?></p><
+        <p><?php echo link_to_collection_for_item(); ?></p>
     <?php endif; ?>
 
     <h4><?php echo __('Citation'); ?></h4>

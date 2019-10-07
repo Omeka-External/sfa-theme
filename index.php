@@ -12,7 +12,9 @@
 
 <div class="grid-x grid-padding-x top">
     <div class="medium-12 cell">
-      <p>Some explanatory text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ducimus assumenda consequuntur harum perspiciatis, cupiditate dolorum, voluptatum sequi laudantium accusantium aliquid enim exercitationem quia eveniet expedita, culpa? Magni ex, odit.</p>
+        <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
+            <p class="orientation columns "><?php echo $homepageText; ?></p>
+        <?php endif; ?>
     </div>
 </div>
 
