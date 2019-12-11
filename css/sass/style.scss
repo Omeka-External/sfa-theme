@@ -170,7 +170,7 @@ hr {
     cursor: pointer;
 }
 
-#content .button:hover, .tags a:hover {
+#content .button:hover, #content .button:focus, .tags a:hover, .tags a:focus {
     background: rgba(164,214,94, 0.75);
 }
 
@@ -190,7 +190,7 @@ hr {
         a {
             display:block;
         }
-         a:hover {
+         a:hover, a:focus {
             text-decoration: underline;
         }
     }
